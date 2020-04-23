@@ -83,8 +83,7 @@ function requestIDParser(req, res, next) {
         res.status(400).send("Couldn't parse request id guid");
         return;
     }    
-    
-    
+
     console.log("RequestID start: " + reqID);
     next();
     console.log("RequestID done: " + reqID);
