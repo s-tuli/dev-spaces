@@ -78,7 +78,7 @@ jobs:
         imagepullsecrets: |
           ${{ secrets.IMAGE_PULL_SECRET }}
  
-    - uses: azure/dev-spaces/actions/add-review-url@Releases/v2
+    - uses: azure/dev-spaces/actions/add-review-url@s-tuli/ConvertGitHubActionToTypeScript
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}  
         host: ${{ secrets.HOST }}
